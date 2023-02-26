@@ -1,0 +1,29 @@
+{
+    "timeZone": "Asia/Jakarta",
+    "language": "en",
+    "ownerNumber": ["6281261865875"],
+    "readStatus": true,
+    "readMessage": true,
+    "antiCall": {
+        "reject": true,
+        "block": false,
+        "ban": true
+    },
+    "prefix": "!#.",
+    "name": "OrionBot",
+    "footer": "OrionPro - All Rights Reserved",
+    "self": false,
+    "user": {
+        "basic": {
+            "limit": 30
+        },
+        "premium": {
+            "limit": 300,
+            "expires": 30
+        },
+        "vip": {
+            "limit": 3000,
+            "expires": 30
+        }
+    }
+}

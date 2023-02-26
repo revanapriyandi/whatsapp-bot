@@ -1,0 +1,62 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributorsPerLine": 7,
+  "projectName": "whatsapp-bot",
+  "projectOwner": "arugaz",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true,
+  "commitConvention": "eslint",
+  "contributors": [
+    {
+      "login": "TobyG74",
+      "name": "Tobi Saputra",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32604979?v=4",
+      "profile": "https://github.com/TobyG74",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "arugaz",
+      "name": "ArugaZ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53950128?v=4",
+      "profile": "https://github.com/arugaz",
+      "contributions": [
+        "code",
+        "ideas"
+      ]
+    },
+    {
+      "login": "GuckTubeYT",
+      "name": "Muhammad Kevin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56192597?v=4",
+      "profile": "https://youtube.com/GuckTubeYT",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "LSystemus-2",
+      "name": "LSystemus-2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/90476449?v=4",
+      "profile": "https://github.com/LSystemus-2",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "Issa2001",
+      "name": "一茶",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89695452?v=4",
+      "profile": "https://github.com/Issa2001",
+      "contributions": [
+        "ideas"
+      ]
+    }
+  ]
+}
