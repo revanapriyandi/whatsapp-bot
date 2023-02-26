@@ -20,6 +20,24 @@ export const whatsappRoutes = (fastify: FastifyInstance, client: WAClient) => {
           statusCode: 200
         }
       })
+
+      child.get("/send/message/:id", (request, reply) => {
+        const { id } = request.query as { id: string }
+        const { message } = request.query as { message: string }
+        if (!id || !message) {
+          reply.code(400)
+          throw new Error("Missing parameters")
+        }
+        const tx = client.sendMessage(id, {
+          text: message
+        }
+        )
+        return {
+          message: tx,
+          error: "Success",
+          statusCode: 200
+        }
+      })
     },
     { prefix: "/api" }
   )
