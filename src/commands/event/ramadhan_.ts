@@ -15,20 +15,20 @@ export default <Event>{
             const timezone = "Asia/Jakarta";
 
             const id = user.userId;
-            const today = moment().tz(timezone).format('YYYY-MM-DD');
-            const apiUrl = `https://api.aladhan.com/v1/timingsByCoordinates/${today}?latitude=${latitude}&longitude=${longitude}&method=2`;
+            const today = moment().tz(timezone).format('DD-MM-YYYY');
+            const apiUrl = `http://api.aladhan.com/v1/timingsByAddress/${today}?address=Jakarta`;
             fetch(apiUrl)
                 .then(response => response.json())
                 .then(data => {
                     const timings = data.data.timings;
 
-                    const imsak = moment(timings.imsak, 'HH:mm').tz(timezone);
-                    const subuh = moment(timings.fajr, 'HH:mm').tz(timezone);
-                    const maghrib = moment(timings.maghrib, 'HH:mm').tz(timezone);
-                    const isya = moment(timings.isha, 'HH:mm').tz(timezone);
+                    const imsak = moment(timings.Imsak, 'HH:mm').tz(timezone);
+                    const subuh = moment(timings.Fajr, 'HH:mm').tz(timezone);
+                    const maghrib = moment(timings.Maghrib, 'HH:mm').tz(timezone);
+                    const isya = moment(timings.Isha, 'HH:mm').tz(timezone);
 
                     const sahurReminderTime = moment().tz(timezone).add(6, 'hours');
-                    const imsakReminderTime = imsak.clone().subtract(30, 'minutes');
+                    const imsakReminderTime = imsak.clone().subtract(50, 'minutes');
                     const iftarReminderTime = moment().tz(timezone).add(18, 'hours');
 
                     if (moment().tz(timezone).isBefore(subuh)) {
