@@ -1,7 +1,6 @@
 import type { Command } from "../../types/command"
 import Youtube from "../../libs/downloader/youtube"
 import yts from 'yt-search'
-import { uploadToUguu } from "../../utils/fetcher"
 
 export default <Command>{
   category: "downloader",
@@ -20,8 +19,7 @@ export default <Command>{
     if (!videos || videos.length <= 0) return await message.reply(`⚓ No Matching videos found for the term : *${arg}*`)
     const audio = new Youtube(videos[0].url, 'audio')
     if (!audio.url) return
-    const ugu = await uploadToUguu(await audio.getBuffer(), "mp3")
-    return await client.sendMessage(message.from, { audio: { url: ugu } }, { quoted: message, ephemeralExpiration: message.expiration })
+    return await client.sendMessage(message.from, { audio: await audio.getBuffer(), mimetype: 'audio/mp4' }, { quoted: message, ephemeralExpiration: message.expiration })
 
     throw "noCmd"
   }

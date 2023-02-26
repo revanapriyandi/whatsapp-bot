@@ -2,7 +2,6 @@ import config from "../../utils/config"
 import type { Command } from "../../types/command"
 import Youtube from "../../libs/downloader/youtube"
 import { formatDurasi } from "../../utils/format"
-import { uploadToUguu } from "../../utils/fetcher"
 
 export default <Command>{
     category: "downloader",
@@ -33,9 +32,8 @@ export default <Command>{
             audio: await audio.getBuffer(),
             headerType: 4
         }
-        const ugu = await uploadToUguu(await audio.getBuffer(), "mp3")
 
-        await client.sendMessage(message.from, { audio: { url: ugu } }, { quoted: message, ephemeralExpiration: message.expiration })
+        await client.sendMessage(message.from, { audio: await audio.getBuffer(), mimetype: 'audio/mp4' }, { quoted: message, ephemeralExpiration: message.expiration })
 
         return await client.sendMessage(
             message.from,

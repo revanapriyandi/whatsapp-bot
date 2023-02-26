@@ -10,8 +10,6 @@ export default <Event>{
         if (message.fromMe || message.isGroupMsg || command) return
         const db = await database.getAllUsers();
         db.forEach(async (user) => {
-            const latitude = -6.1754;
-            const longitude = 106.8272;
             const timezone = "Asia/Jakarta";
 
             const id = user.userId;
