@@ -45,6 +45,10 @@ model Group {
   antiviewonce Boolean     @default(false)
   /// Opts for anti other country, by country number code
   anticountry  AntiCountry
+  /// Opts for chatbot
+  chatbot      Boolean     @default(false)
+  /// Opts for chatbotType
+  chatbotType  String?
 }
 
 type AntiCountry {
