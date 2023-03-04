@@ -12,7 +12,7 @@
     "prefix": "!#.",
     "name": "OrionBot",
     "footer": "OrionPro - All Rights Reserved",
-    "self": true,
+    "self": false,
     "user": {
         "basic": {
             "limit": 30
