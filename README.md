@@ -12,31 +12,7 @@
 
 ---
 
-<div align="center">  
-  <a href="https://github.com/ArugaZ">
-    <img title="ArugaZ" src="https://img.shields.io/badge/AUTHOR-ARUGAZ-orange.svg?style=for-the-badge&logo=github"></a>
-</div>
-<div align="center">
-  <a href="https://www.codefactor.io/repository/github/arugaz/whatsapp-bot/overview/master">
-    <img title="Whatsapp-Bot-Multi-Device-CodeFactor" src="https://img.shields.io/codefactor/grade/github/ArugaZ/whatsapp-bot/master?color=blue&label=CodeFactor&style=flat-square">
-  </a>
-  <a href="https://github.com/arugaz/whatsapp-bot/issues">
-    <img title="Whatsapp-Bot-Multi-Device-Issues" src="https://img.shields.io/github/issues-raw/arugaz/whatsapp-bot?label=Issues&color=%23ff9aa2&style=flat-square" />
-  </a>
-</div>
-<div align="center">
-  <a href="https://github.com/arugaz/followers">
-    <img title="Whatsapp-Bot-Multi-Device-Followers" src="https://img.shields.io/github/followers/arugaz?label=Folls&color=%23ff9aa2&style=flat-square">
-  </a>
-  <a href="https://github.com/arugaz/whatsapp-bot/stargazers/">
-    <img title="Stars" src="https://img.shields.io/github/stars/arugaz/whatsapp-bot?label=Stars&color=%23ffb7b2&style=flat-square">
-  </a>
-  <a href="https://github.com/arugaz/whatsapp-bot/network/members">
-    <img title="Whatsapp-Bot-Multi-Device-Forks" src="https://img.shields.io/github/forks/arugaz/whatsapp-bot?label=Forks&color=%23ffdac1&style=flat-square">
-  </a>
-  <a href="https://github.com/arugaz/whatsapp-bot/watchers">
-    <img title="Whatsapp-Bot-Multi-Device-Watching" src="https://img.shields.io/github/watchers/arugaz/whatsapp-bot?label=Watchers&color=%23e2f0cb&style=flat-square">
-  </a>
+
   <a href="https://github.com/arugaz/whatsapp-bot/blob/master/LICENSE">
     <img title="Whatsapp-Bot-Multi-Device-License" src="https://img.shields.io/badge/License-GPL_3.0_or_later-blue.svg?color=%23b5ead7&style=flat-square"/>
   </a>
