@@ -46,7 +46,7 @@
         "fs": "^0.0.1-security",
         "fs-extra": "^11.1.0",
         "jimp": "^0.16.1",
-        "jsdom": "^21.1.0",
+        "jsdom": "^22.0.0",
         "link-preview-js": "^3.0.4",
         "moment-timezone": "^0.5.41",
         "node-webpmux": "^3.1.3",
